@@ -119,18 +119,12 @@
       background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)15%,rgba(0,0,0,1)18%,rgba(0,0,0,1)100%), url(/images/background_image.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-      /* opacity:.7; */
-      /* background-color: aquamarine; */
   }
   @media screen and (min-width:376px) {
       .bg{
-      height: 700px;
+      height: 1000px;
       width: 100%;
       background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)80%,rgba(0,0,0,1)100%), url(/images/background_image.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* opacity:.7; */
-      /* background-color: aquamarine; */
   }
   }
   
@@ -171,7 +165,7 @@
   @media screen and (min-width:376px) {
       .panel{
       width: 70%;
-      height:88%;
+      height:100%;
       border:2px solid rgb(187, 154, 73);
       border-radius: 5px;
       margin: 0 ;
@@ -304,14 +298,21 @@
     position: absolute;
     width: 88%;
     height: 20px;
-    bottom:32%;
-    left:25px;
+    bottom:30%;
+    left:30px;
     border: 0.8px solid #333;
     color:#333;
     background-color: rgb(210, 129, 6);
     text-decoration: none;
     line-height: 0;
 
+  }
+  @media  screen and (min-width:376px) {
+    .check-price{
+      width: 88%;
+      height: 20px;
+      bottom:25%;
+      left:35px;
   }
   .product-name{
       color:rgb(217, 178, 80);
@@ -337,7 +338,8 @@
  /* play bar  */
   .play-bar{
       width: 90%;
-      margin: 0 auto;
+      margin: 10px auto 15px;
+      
   }
 .dropdown-btn{
     /* color: #fff; */
@@ -637,8 +639,8 @@
   
 
   .feature-product-wrap{
-    width: 85%;
-    height: 220px;
+    width: 90%;
+    height: 180px;
     padding: 0;
     overflow: hidden;
     background-color: #fff;
@@ -648,7 +650,7 @@
   }
   @media screen and (min-width:376px){
     .feature-product-wrap{
-        width: 60%;
+        width: 50%;
         height: 500px;
         padding: 0;
         /* overflow: hidden; */
@@ -663,11 +665,13 @@
   .feature-product{
     overflow: hidden;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    /* object-fit: contain; */
   }
   @media screen and (min-width:376px) {
     .feature-product{
-        overflow: hidden;
+      overflow: hidden;
+
         height: 100%;
         object-fit: cover;
       }
@@ -930,4 +934,4 @@
  }
  .brand-logos{
     width: 250px;
- }
+ }}
